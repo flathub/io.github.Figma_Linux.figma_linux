@@ -59,7 +59,7 @@ modules:
         dest-filename: figma-linux.sh
         commands:
           - export TMPDIR="$XDG_RUNTIME_DIR/app/$FLATPAK_ID"
-          - exec zypak-wrapper /app/figma-linux/figma-linux "$@"
+          - exec /app/figma-linux/figma-linux "$@"
 
       - type: file
         path: io.github.Figma_Linux.figma_linux.desktop
