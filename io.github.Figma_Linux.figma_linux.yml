@@ -21,12 +21,13 @@ modules:
       - unzip figma-linux_*.zip -d opt/figma-linux
       - rm figma-linux_*.zip
       - mkdir -p /app/figma-linux
+      - rm -rf opt/figma-linux/*.so
+      - rm -rf opt/figma-linux/*.so.*
+      - rm -rf opt/figma-linux/lib
+      - rm -rf opt/figma-linux/usr
       - cp -r  opt/figma-linux/* /app/figma-linux
       - mkdir -p /app/share/icons/hicolor
       - cp -r opt/figma-linux/icons /app/share/icons/hicolor
-      - cp -r opt/figma-linux/*.so /app/lib
-      - cp -r opt/figma-linux/*.so.* /app/lib
-      - cp -r opt/figma-linux/lib/**/*.so.* /app/lib
       - for icon in opt/figma-linux/icons/*; do fullname="${icon#opt/figma-linux/icons/}"; name="${fullname%.*}"; ext="${icon#*.*}"; mkdir -p /app/share/icons/hicolor/${name}/apps; cp -rf "opt/figma-linux/icons/${name}.${ext}" "/app/share/icons/hicolor/${name}/apps/figma-linux.${ext}"; done
       - install figma-linux.sh /app/bin/figma-linux
       - install -Dm644 io.github.Figma_Linux.figma_linux.desktop /app/share/applications/io.github.Figma_Linux.figma_linux.desktop
