@@ -26,7 +26,6 @@ modules:
       - install figma-linux.sh /app/bin/figma-linux
       - install -Dm644 io.github.Figma_Linux.figma_linux.desktop /app/share/applications/io.github.Figma_Linux.figma_linux.desktop
       - install -Dm644 ${FLATPAK_ID}.appdata.xml -t /app/share/appdata/
-      - desktop-file-edit --set-icon=${FLATPAK_ID} /app/share/applications/io.github.Figma_Linux.figma_linux.desktop
     sources:
       - type: file
         only-arches:
