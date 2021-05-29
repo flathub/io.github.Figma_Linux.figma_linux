@@ -24,7 +24,7 @@ modules:
       - cp -r  opt/figma-linux/* /app/figma-linux
       - mkdir -p /app/share/icons/hicolor
       - cp -r opt/figma-linux/icons /app/share/icons/hicolor
-      - for icon in opt/figma-linux/icons/*; do fullname="${icon#opt/figma-linux/icons/}"; name="${fullname%.*}"; ext="${icon#*.*}"; mkdir -p /app/share/icons/hicolor/${name}/apps; cp -rf "opt/figma-linux/icons/${name}.${ext}" "/app/share/icons/hicolor/${name}/apps/${FLATPAK_ID}.${ext}"; done
+      - for icon in opt/figma-linux/icons/*; do fullname="${icon#opt/figma-linux/icons/}"; name="${fullname%.*}"; ext="${icon#*.*}"; mkdir -p /app/share/icons/hicolor/${name}/apps; cp -rf "opt/figma-linux/icons/${name}.${ext}" "/app/share/icons/hicolor/${name}/apps/figma-linux.${ext}"; done
       - install figma-linux.sh /app/bin/figma-linux
       - install -Dm644 io.github.Figma_Linux.figma_linux.desktop /app/share/applications/io.github.Figma_Linux.figma_linux.desktop
       - install -Dm644 ${FLATPAK_ID}.appdata.xml -t /app/share/appdata/
