@@ -31,8 +31,8 @@ modules:
         only-arches:
           - x86_64
 
-        url: https://github.com/Figma-Linux/figma-linux/releases/download/v0.7.2/figma-linux_0.7.2_linux_amd64.deb
-        sha256: e3fef97591d716701f400064ac085308437a259a2395cb74337cccd6ef606dd9
+        url: https://github.com/Figma-Linux/figma-linux/releases/download/v0.8.0/figma-linux_0.8.0_linux_amd64.deb
+        sha256: 7b5eea5b132a0403c462a31cbdebb9acb81bf42048bb734515be65d8713c45ec
 
         x-checker-data:
           type: json
@@ -44,8 +44,8 @@ modules:
         only-arches:
           - aarch64
 
-        url: https://github.com/Figma-Linux/figma-linux/releases/download/v0.7.2/figma-linux_0.7.2_linux_arm64.deb
-        sha256: 105b795b9449366c0abff18a44200d941eb95ddee4e4667ee0ae54524805ecc5
+        url: https://github.com/Figma-Linux/figma-linux/releases/download/v0.8.0/figma-linux_0.8.0_linux_arm64.deb
+        sha256: b56616e33a2d74ed4d83f28ed3586d4874b2b6b081b1df58787f86729d2680b1
 
         x-checker-data:
           type: json
