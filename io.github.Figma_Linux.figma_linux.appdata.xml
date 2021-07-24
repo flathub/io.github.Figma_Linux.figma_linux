@@ -35,11 +35,8 @@
     <release version="0.8.1" date="2021-04-05">
       <description>
         <ul>
-          <li>Bug Fixes:</li>
-          <ul>
-            <li>fix size of close icon</li>
-            <li>fix build app for ppa repository</li>
-          </ul>
+          <li>fix size of close icon</li>
+          <li>fix build app for ppa repository</li>
         </ul>
       </description>
     </release>
