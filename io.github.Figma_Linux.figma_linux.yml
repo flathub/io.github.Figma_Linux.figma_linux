@@ -37,7 +37,7 @@ modules:
         x-checker-data:
           type: json
           url: https://api.github.com/repos/Figma-Linux/figma-linux/releases/latest
-          version-query: '.tag_name | sub("^-"; "")'
+          version-query: '.tag_name | sub("^v"; "")'
           url-query: '.assets[] | select(.name=="figma-linux_" + $version + "_linux_amd64.deb") | .browser_download_url'
 
       - type: file
@@ -50,7 +50,7 @@ modules:
         x-checker-data:
           type: json
           url: https://api.github.com/repos/Figma-Linux/figma-linux/releases/latest
-          version-query: '.tag_name | sub("^-"; "")'
+          version-query: '.tag_name | sub("^v"; "")'
           url-query: '.assets[] | select(.name=="figma-linux_" + $version + "_linux_arm64.deb") | .browser_download_url'
 
       - type: script
