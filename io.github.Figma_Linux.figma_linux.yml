@@ -1,9 +1,9 @@
 id: io.github.Figma_Linux.figma_linux
 sdk: org.freedesktop.Sdk
 runtime: org.freedesktop.Platform
-runtime-version: "20.08"
+runtime-version: '20.08'
 base: org.electronjs.Electron2.BaseApp
-base-version: "20.08"
+base-version: '20.08'
 finish-args:
   - --share=ipc
   - --socket=x11
@@ -31,27 +31,29 @@ modules:
         only-arches:
           - x86_64
 
-        url: https://github.com/Figma-Linux/figma-linux/releases/download/v0.8.1/figma-linux_0.8.1_linux_amd64.deb
-        sha256: 6e82a5332fa636443bc6d3f07b11b9e4b0e7ebcf2ac9a9c33b6d4899c4b4f11f
+        url: https://github.com/Figma-Linux/figma-linux/releases/download/v0.9.0/figma-linux_0.9.0_linux_amd64.deb
+        sha256: fe60551dd533184fc68972222370da5bcd0bca569a78483385df7034a51c7ddf
 
         x-checker-data:
           type: json
           url: https://api.github.com/repos/Figma-Linux/figma-linux/releases/latest
-          version-query: '.tag_name | sub("^v"; "")'
-          url-query: '.assets[] | select(.name=="figma-linux_" + $version + "_linux_amd64.deb") | .browser_download_url'
+          version-query: .tag_name | sub("^v"; "")
+          url-query: .assets[] | select(.name=="figma-linux_" + $version + "_linux_amd64.deb")
+            | .browser_download_url
 
       - type: file
         only-arches:
           - aarch64
 
-        url: https://github.com/Figma-Linux/figma-linux/releases/download/v0.8.1/figma-linux_0.8.1_linux_arm64.deb
-        sha256: 69be89fcb99664c1b153de322c5476d6e79ffadc075881ccc3d6af3307cceb82
+        url: https://github.com/Figma-Linux/figma-linux/releases/download/v0.9.0/figma-linux_0.9.0_linux_arm64.deb
+        sha256: 53b80bf750425f77d57626906ce9c90770c49b96b1f663002f2257082e3e7bc4
 
         x-checker-data:
           type: json
           url: https://api.github.com/repos/Figma-Linux/figma-linux/releases/latest
-          version-query: '.tag_name | sub("^v"; "")'
-          url-query: '.assets[] | select(.name=="figma-linux_" + $version + "_linux_arm64.deb") | .browser_download_url'
+          version-query: .tag_name | sub("^v"; "")
+          url-query: .assets[] | select(.name=="figma-linux_" + $version + "_linux_arm64.deb")
+            | .browser_download_url
 
       - type: script
         dest-filename: figma-linux.sh
