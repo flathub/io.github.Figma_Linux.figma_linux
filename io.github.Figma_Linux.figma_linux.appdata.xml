@@ -7,9 +7,7 @@
   <icon type="remote">https://raw.githubusercontent.com/Figma-Linux/figma-linux/dev/resources/icons/512x512.png</icon>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-2.0</project_license>
-  <description> Figma is the first interface design tool based in the browser, making it easier for teams to create
-    software. <p>NOTE: This wrapper is not verified by, affiliated with, or supported by Figma, Inc.</p>
-  </description>
+  <description> Figma is the first interface design tool based in the browser, making it easier for teams to create    software. <p>NOTE: This wrapper is not verified by, affiliated with, or supported by Figma, Inc.</p>  </description>
   <url type="homepage">https://github.com/Figma-Linux/figma-linux</url>
   <url type="bugtracker">https://github.com/Figma-Linux/figma-linux/issues</url>
   <screenshots>
@@ -32,6 +30,16 @@
     <content_attribute id="money-purchasing">intense</content_attribute>
   </content_rating>
   <releases>
+    <release version="0.9.2" date="2021-10-16">
+      <description>
+        <ul>
+          <li>Bug Fixes:</li>
+          <ul>
+            <li>request on get mic access. <a href="https://github.com/Figma-Linux/figma-linux/issues/238" target="_blank">#238</a></li>
+          </ul>
+        </ul>
+      </description>
+    </release>
     <release version="0.9.1" date="2021-10-14"/>
     <release version="0.8.1" date="2021-04-05">
       <description>
