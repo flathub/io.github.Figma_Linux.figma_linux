@@ -7,9 +7,7 @@
   <icon type="remote">https://raw.githubusercontent.com/Figma-Linux/figma-linux/dev/resources/icons/512x512.png</icon>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-2.0</project_license>
-  <description> Figma is the first interface design tool based in the browser, making it easier for teams to create
-    software. <p>NOTE: This wrapper is not verified by, affiliated with, or supported by Figma, Inc.</p>
-  </description>
+  <description> Figma is the first interface design tool based in the browser, making it easier for teams to create    software. <p>NOTE: This wrapper is not verified by, affiliated with, or supported by Figma, Inc.</p>  </description>
   <url type="homepage">https://github.com/Figma-Linux/figma-linux</url>
   <url type="bugtracker">https://github.com/Figma-Linux/figma-linux/issues</url>
   <screenshots>
@@ -32,6 +30,17 @@
     <content_attribute id="money-purchasing">intense</content_attribute>
   </content_rating>
   <releases>
+    <release version="0.9.4" date="2022-02-20">
+      <description>
+        <ul>
+          <li>Bug Fixes:</li>
+          <ul>
+            <li>Search field does not render correctly. <a href="https://github.com/Figma-Linux/figma-linux/issues/263" target="_blank">#263</a></li>
+            <li>apply theme rules. <a href="https://github.com/Figma-Linux/figma-linux/issues/259" target="_blank">#259</a></li>
+          </ul>
+        </ul>
+      </description>
+    </release>
     <release version="0.9.3" date="2021-12-09"/>
     <release version="0.9.2" date="2021-10-16"/>
     <release version="0.9.1" date="2021-10-14"/>
