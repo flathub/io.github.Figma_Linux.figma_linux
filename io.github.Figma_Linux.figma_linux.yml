@@ -31,8 +31,8 @@ modules:
         only-arches:
           - x86_64
 
-        url: https://github.com/Figma-Linux/figma-linux/releases/download/v0.9.6/figma-linux_0.9.6_linux_amd64.deb
-        sha256: a60e442705c6d1ffc22508c7d679367f8dfaad596b9ae8a9c3238c3076bc4cf1
+        url: https://github.com/Figma-Linux/figma-linux/releases/download/v0.10.0/figma-linux_0.10.0_linux_amd64.deb
+        sha256: fb1897130492c69b75fc4bbd839eff2fe225fc0bfe6bf9a0181425ff82ca47be
 
         x-checker-data:
           type: json
