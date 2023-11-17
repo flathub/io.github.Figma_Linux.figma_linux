@@ -1,18 +1,17 @@
 id: io.github.Figma_Linux.figma_linux
 sdk: org.freedesktop.Sdk
 runtime: org.freedesktop.Platform
-runtime-version: "22.08"
+runtime-version: '22.08'
 base: org.electronjs.Electron2.BaseApp
-base-version: "22.08"
+base-version: '22.08'
 finish-args:
-  - --share=ipc
-  - --socket=x11
-  - --device=dri
-  - --share=network
-  - --filesystem=xdg-pictures
+  - '--share=ipc'
+  - '--socket=x11'
+  - '--device=dri'
+  - '--share=network'
+  - '--filesystem=xdg-pictures'
 command: figma-linux
 rename-icon: figma-linux
-
 modules:
   - name: figma-linux
     buildsystem: simple
@@ -24,41 +23,42 @@ modules:
       - mkdir -p /app/share/icons/hicolor
       - cp -r usr/share/icons/hicolor/* /app/share/icons/hicolor
       - install figma-linux.sh /app/bin/figma-linux
-      - install -Dm644 io.github.Figma_Linux.figma_linux.desktop /app/share/applications/io.github.Figma_Linux.figma_linux.desktop
+      - >-
+        install -Dm644 io.github.Figma_Linux.figma_linux.desktop
+        /app/share/applications/io.github.Figma_Linux.figma_linux.desktop
       - install -Dm644 ${FLATPAK_ID}.appdata.xml -t /app/share/appdata/
     sources:
       - type: file
         only-arches:
           - x86_64
-        url: https://github.com/Figma-Linux/figma-linux/releases/download/v0.10.0/figma-linux_0.10.0_linux_amd64.deb
-        sha256: fb1897130492c69b75fc4bbd839eff2fe225fc0bfe6bf9a0181425ff82ca47be
+        url: >-
+          https://github.com/Figma-Linux/figma-linux/releases/download/v0.11.0/figma-linux_0.11.0_linux_amd64.deb
+        sha256: 60cd106f088b09788fa162341d7d254f784a653cb46bd8e076feaf742d704cec
         x-checker-data:
           type: json
           url: https://api.github.com/repos/Figma-Linux/figma-linux/releases/latest
           version-query: .tag_name | sub("^v"; "")
           url-query: >
-            .assets[] | select(.name=="figma-linux_" + $version + "_linux_amd64.deb")
-            | .browser_download_url
-
+            .assets[] | select(.name=="figma-linux_" + $version +
+            "_linux_amd64.deb") | .browser_download_url
       - type: file
         only-arches:
           - aarch64
-        url: https://github.com/Figma-Linux/figma-linux/releases/download/v0.9.6/figma-linux_0.9.6_linux_arm64.deb
-        sha256: a11e3e838506eb06f4b6f73ad062fff7d4c578cb74656ff031fdcabb1cc3d6af
+        url: >-
+          https://github.com/Figma-Linux/figma-linux/releases/download/v0.11.0/figma-linux_0.11.0_linux_arm64.deb
+        sha256: 0852c2b0b7946dc58b2eb59fe0ffd3d3281542a75e0eef3dd50429c9764246f6
         x-checker-data:
           type: json
           url: https://api.github.com/repos/Figma-Linux/figma-linux/releases/latest
           version-query: .tag_name | sub("^v"; "")
           url-query: >
-            .assets[] | select(.name=="figma-linux_" + $version + "_linux_arm64.deb")
-            | .browser_download_url
-
+            .assets[] | select(.name=="figma-linux_" + $version +
+            "_linux_arm64.deb") | .browser_download_url
       - type: script
         dest-filename: figma-linux.sh
         commands:
           - export TMPDIR="$XDG_RUNTIME_DIR/app/$FLATPAK_ID"
           - exec zypak-wrapper /app/figma-linux/figma-linux "$@"
-
       - type: file
         path: io.github.Figma_Linux.figma_linux.desktop
       - type: file

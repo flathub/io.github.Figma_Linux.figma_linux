@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <component type="desktop">
   <id>io.github.Figma_Linux.figma_linux</id>
   <name>Figma for Linux</name>
@@ -7,8 +7,11 @@
   <icon type="remote">https://raw.githubusercontent.com/Figma-Linux/figma-linux/dev/resources/icons/512x512.png</icon>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-2.0</project_license>
-  <description> Figma is the first interface design tool based in the browser, making it easier for teams to create
-    software. <p>NOTE: This wrapper is not verified by, affiliated with, or supported by Figma, Inc.</p>
+  <description>
+     Figma is the first interface design tool based in the browser, making it easier for teams to create
+    software. 
+  
+    <p>NOTE: This wrapper is not verified by, affiliated with, or supported by Figma, Inc.</p>
   </description>
   <url type="homepage">https://github.com/Figma-Linux/figma-linux</url>
   <url type="bugtracker">https://github.com/Figma-Linux/figma-linux/issues</url>
@@ -32,6 +35,227 @@
     <content_attribute id="money-purchasing">intense</content_attribute>
   </content_rating>
   <releases>
+    <release version="0.11.0" date="2023-11-17">
+      <description>
+        <ul>
+          <li>Features:</li>
+          <li>add fullscreen</li>
+          <li>added the ability to set Chromium flags from the app settings</li>
+          <li>save and restore windows state</li>
+          <li>add window state</li>
+          <li>add the Recently Closed Tabs menu item</li>
+          <li>rewrite the code related with generating the desktop menu to a new API</li>
+          <li>restore community tab after close the app</li>
+          <li>add context menu for the main and the community tabs</li>
+          <li>implement community tab</li>
+          <li>rewrite create new file</li>
+          <li>implement multiple windows</li>
+          <li>Rework frontend. Delete React, Mobx, Webpack, node-sass and etc. And add RollUp and Svelte</li>
+          <li/>
+          <li>Bug Fixes:</li>
+          <li>main pipeline</li>
+          <li>display themes list after first sync</li>
+          <li>transparent bg color on the Chrome GPU page</li>
+          <li>reload main tab after signin</li>
+          <li>toggle fullscreen mode</li>
+          <li>restart the app after change a few options</li>
+          <li>disable the loading indicator for the GPU tab</li>
+          <li>redirect after finish authorization</li>
+          <li>hot reload plugins after add it</li>
+          <li>update theme rules</li>
+          <li>set tab loading</li>
+          <li>apply theme's colors</li>
+          <li>bugs with window control</li>
+          <li>plugin API and hot reload plugins</li>
+          <li>open a poject under another user</li>
+          <li>add more authed users</li>
+          <li>chromeGpu page</li>
+          <li>open devTools for tabs and close tab from menu</li>
+          <li>update panel amd Figm UI scale</li>
+          <li>open devTools for window</li>
+          <li>close the new file tab after switch to file browser through a main menu item</li>
+          <li>handle messages for messageHandler in webBinding</li>
+          <li>set tab focus</li>
+          <li>open link on the community tab</li>
+          <li>focus on the file browser from the community tab and focus on the community tab from the file browser</li>
+          <li>tab focus after close the new file tab</li>
+          <li>sort tabs after open another tab</li>
+          <li>open Community Tab</li>
+          <li>setTitle for Community Tab</li>
+          <li>change theme for all windows</li>
+          <li>open settings popup inside a window</li>
+          <li>circular dependency in menu</li>
+          <li>focus on window while launch second instance</li>
+          <li>color palette styles</li>
+          <li>docker files</li>
+          <li>apply current theme after page reload</li>
+          <li>apply a theme for tabs</li>
+          <li>srollbar style in the file browser page view</li>
+          <li>load themes</li>
+          <li>load default theme for the main UI if themes is disabled</li>
+          <li>docker files</li>
+          <li>move font manager on nodeJS side</li>
+          <li>init settings if file exists with partial data</li>
+          <li>error when try restore empty tab list</li>
+          <li>
+            mic access. 
+            <a href="https://github.com/Figma-Linux/figma-linux/issues/317" target="_blank">#317</a>
+          </li>
+          <li>
+            export files. 
+            <a href="https://github.com/Figma-Linux/figma-linux/issues/203" target="_blank">#203</a>
+          </li>
+          <li>remove a tab object from the svelte store after the close tab from context menu</li>
+          <li>copy a project url, and reload a tab</li>
+          <li>save and restore tabs after open a window</li>
+          <li>clicks on the toolbar in ZoomView</li>
+          <li>reset the color palette to default</li>
+          <li>height of the empty dropdown</li>
+          <li>display tutorial</li>
+          <li>Call rerender of the BrowserView after open the Settings at first time</li>
+          <li>prod preload script paths</li>
+          <li>update color palette apply rules</li>
+          <li>icon color on tool bar for themes</li>
+          <li>remove double scroll bar in the settings body</li>
+          <li>apply default theme while app start</li>
+          <li>apply CreatorTheme's theme while start the app</li>
+          <li>click handler for the ButtonTool component</li>
+          <li>Button click event in the Settings body component</li>
+          <li>disabled text color for Figma UI popups</li>
+          <li>popup box shadow</li>
+          <li>the name and the author text fields in ThemeCreator</li>
+          <li>calc panel height after change of the panel scale</li>
+          <li>sync themes</li>
+          <li>change zoom for the ZoomView component</li>
+          <li>toggling the main menu</li>
+          <li>
+            Fix build-id conflicts with other packages ( 
+            <a href="https://github.com/Figma-Linux/figma-linux/issues/310)" target="_blank">#310)</a>
+          </li>
+          <li>
+            Local plugins are reset on application exit. 
+            <a href="https://github.com/Figma-Linux/figma-linux/issues/296" target="_blank">#296</a>
+          </li>
+          <li/>
+          <li>Other Changes:</li>
+          <li>update readme</li>
+          <li>update snapcraft config</li>
+          <li>update generate release notes</li>
+          <li>update ci</li>
+          <li>fix get git tag</li>
+          <li>fix get git tag in generate_release_notes.pl script</li>
+          <li>foramt Error in logs</li>
+          <li>update default settings</li>
+          <li>update the handlePageCommand and add the showFlashMessage</li>
+          <li>remove widget menu item</li>
+          <li>replace deprecated protocol.registerHttpProtocol on protocol.handle</li>
+          <li>enable Vulkan, OpenGL, WebGPU</li>
+          <li>Bump Electron to 27.0.4</li>
+          <li>update readme</li>
+          <li>update icon</li>
+          <li>remove old files</li>
+          <li>Logger</li>
+          <li>Bump Electron to 27.0.3</li>
+          <li>main menu</li>
+          <li>clean up code</li>
+          <li>fix</li>
+          <li>remove unnecessary import and property</li>
+          <li>remove a few logs</li>
+          <li>Bump Electron to 24.8.2</li>
+          <li>fix docker files</li>
+          <li>move svelte-dnd-action dependency inside the project</li>
+          <li>update docker files</li>
+          <li>update snapcraft file</li>
+          <li>update roolup renderer config</li>
+          <li>update import of the package.json</li>
+          <li>update rollup renderer config</li>
+          <li>Bump Electron to 22.3.5</li>
+          <li>update README</li>
+          <li>update apply theme rules</li>
+          <li>Bump figma-linux-rust-binding to 0.2.9</li>
+          <li>Bump figma-linux-rust-binding 0.2.8</li>
+          <li>mode the setUsingMicrophone and the setIsInVoiceCall methods inside the WindowManager</li>
+          <li>add validate on theme exists</li>
+          <li>update style of the toolbar in theme previewer</li>
+          <li>update apply theme rules</li>
+          <li>reset theme if the removed theme was the current</li>
+          <li>Implement the copy and paste colors in the ThemeCreator</li>
+          <li>add the reset to template button in the ThemeCreator's popup menu</li>
+          <li>add a tutorial fir the ThemeCreator previewer</li>
+          <li>change key for toggle the ThemeCreator mask</li>
+          <li>update validate logic</li>
+          <li>remove scroll bar for common settings body</li>
+          <li>mplement validators for the name and  the author fields in ThemeCreator</li>
+          <li>change logic of toggling of the previewers</li>
+          <li>add a flag for use the old previewer in ThemeCreator</li>
+          <li>set user select to none for the body settings</li>
+          <li>update palette rules</li>
+          <li>change logic of the settings body components</li>
+          <li>change zoom factor in ThemeCreator preview by mouse wheel</li>
+          <li>add mask for the ThemeCreator preview</li>
+          <li>Add array of webview in the previewer</li>
+          <li>Implement Figma UI theme previwer</li>
+          <li>Sync themes each time  when the app starts</li>
+          <li>save in the app settings state of DropDown component on the Themes page</li>
+          <li>remove old file of the old ThemeCreator</li>
+          <li>remove the CreatorTheme's BrowserView</li>
+          <li>implement remove of the CreatorTheme's theme</li>
+          <li>implement reset CreatorTheme's theme to default theme</li>
+          <li>implement edit of the CreatorTheme's theme</li>
+          <li>implement disabled property for the Button component</li>
+          <li>implement load ThemeCreator's themes in settings and add theme to the ThemeCreator's themes</li>
+          <li>remove unused svelte  component FromTemplate</li>
+          <li>made up popup menu for the ThemeCreator</li>
+          <li>update name of css variables for font size</li>
+          <li>update the Text component</li>
+          <li>update the List component</li>
+          <li>Add popup base component</li>
+          <li>Add new icons for popup menu</li>
+          <li>imlement upload a color palette from a theme to the ThemeCreator</li>
+          <li>Add flag canEdit for themes</li>
+          <li>plans to add buttons in ThemeCreator header</li>
+          <li>update theme tumbl in theme list</li>
+          <li>fix apply and save General settings and themes</li>
+          <li>close settings UI by click on area beyond modal</li>
+          <li>Add the padding property for Grid component</li>
+          <li>update grid for the theme list</li>
+          <li>styles for tab body in the ThemeCreator UI</li>
+          <li>replace Flex on Grid for theme list</li>
+          <li>replace Flex on Grid for list of template in the ThemeCreator UI</li>
+          <li>Made up the theme creator UI</li>
+          <li>output themes on the themes settings view</li>
+          <li>Implement dropdown container</li>
+          <li>Made up the general settings UI</li>
+          <li>Add checkbox input</li>
+          <li>Implement input components</li>
+          <li>update styles</li>
+          <li>Add the margin porperty for the button component</li>
+          <li>update TabView type, add second component</li>
+          <li>Implement the TabView for Settings UI body</li>
+          <li>Start creating the settings UI. Refactoring of button components</li>
+          <li>change event</li>
+          <li>update logic of main menu button</li>
+          <li>update main menu button</li>
+          <li>update button's code</li>
+          <li>update logic of home button</li>
+          <li>Add hover and active styles for a button component</li>
+          <li>Execute rerender of a BroserView by set tab bounds</li>
+          <li>implement highlighting of an active tab</li>
+          <li>focus on main tab after open any project</li>
+          <li>tab swapping by mouse</li>
+          <li>replace svelte-dnd-action on my fork repository</li>
+          <li>complete work for tab behavior</li>
+          <li>update cursor style while dragging a tab</li>
+          <li>remove auto open in dev move of dev tools for tabs</li>
+          <li>remove unnecessary ipc handler</li>
+          <li>move newProject, closeTab, setTabFocus handler in the WindowManager class</li>
+          <li>move the openTabMenu handler to the WindowsManager</li>
+          <li>cleaned up the code a bit</li>
+          <li>move the setFocusToMainTab handler to WindowsManager class</li>
+          <li/>
+        </ul>
+      </description>
+    </release>
     <release version="0.9.6" date="2022-03-19"/>
     <release version="0.9.4" date="2022-02-20"/>
     <release version="0.9.3" date="2021-12-09"/>
