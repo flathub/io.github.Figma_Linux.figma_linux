@@ -8,8 +8,11 @@
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-2.0</project_license>
   <description>
+    
      Figma is the first interface design tool based in the browser, making it easier for teams to create
     software. 
+  
+    
   
     <p>NOTE: This wrapper is not verified by, affiliated with, or supported by Figma, Inc.</p>
   </description>
@@ -35,6 +38,26 @@
     <content_attribute id="money-purchasing">intense</content_attribute>
   </content_rating>
   <releases>
+    <release version="0.11.1" date="2023-11-17">
+      <description>
+        <ul>
+          <li>Bug Fixes:</li>
+          <li>
+            copy as png. 
+            <a href="https://github.com/Figma-Linux/figma-linux/issues/350" target="_blank">#350</a>
+          </li>
+          <li/>
+          <li>Other Changes:</li>
+          <li>update deb files</li>
+          <li>add desktop file for dev build</li>
+          <li>update readme</li>
+          <li>update snapcraft config</li>
+          <li>update generate release notes</li>
+          <li>update ci</li>
+          <li/>
+        </ul>
+      </description>
+    </release>
     <release version="0.11.0" date="2023-11-17">
       <description>
         <ul>
@@ -98,11 +121,17 @@
           <li>init settings if file exists with partial data</li>
           <li>error when try restore empty tab list</li>
           <li>
+            
             mic access. 
+            
+          
             <a href="https://github.com/Figma-Linux/figma-linux/issues/317" target="_blank">#317</a>
           </li>
           <li>
+            
             export files. 
+            
+          
             <a href="https://github.com/Figma-Linux/figma-linux/issues/203" target="_blank">#203</a>
           </li>
           <li>remove a tab object from the svelte store after the close tab from context menu</li>
@@ -129,11 +158,17 @@
           <li>change zoom for the ZoomView component</li>
           <li>toggling the main menu</li>
           <li>
+            
             Fix build-id conflicts with other packages ( 
+            
+          
             <a href="https://github.com/Figma-Linux/figma-linux/issues/310)" target="_blank">#310)</a>
           </li>
           <li>
+            
             Local plugins are reset on application exit. 
+            
+          
             <a href="https://github.com/Figma-Linux/figma-linux/issues/296" target="_blank">#296</a>
           </li>
           <li/>
