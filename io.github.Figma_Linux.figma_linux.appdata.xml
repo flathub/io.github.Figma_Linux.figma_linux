@@ -10,8 +10,11 @@
   <description>
     
     
+    
      Figma is the first interface design tool based in the browser, making it easier for teams to create
     software. 
+  
+    
   
     
   
@@ -53,13 +56,28 @@
         </ul>
       </description>
     </release>
+    <release version="0.11.2" date="2023-11-18">
+      <description>
+        <ul>
+          <li>Bug Fixes:</li>
+          <li>update files for build on  launchpad</li>
+          <li/>
+          <li>Other Changes:</li>
+          <li>update build ppa script</li>
+          <li/>
+        </ul>
+      </description>
+    </release>
     <release version="0.11.1" date="2023-11-17">
       <description>
         <ul>
           <li>Bug Fixes:</li>
           <li>
             
+            
             copy as png. 
+            
+          
             
           
             <a href="https://github.com/Figma-Linux/figma-linux/issues/350" target="_blank">#350</a>
@@ -141,7 +159,10 @@
           <li>
             
             
+            
             mic access. 
+            
+          
             
           
             
@@ -151,7 +172,10 @@
           <li>
             
             
+            
             export files. 
+            
+          
             
           
             
@@ -184,7 +208,10 @@
           <li>
             
             
+            
             Fix build-id conflicts with other packages ( 
+            
+          
             
           
             
@@ -194,7 +221,10 @@
           <li>
             
             
+            
             Local plugins are reset on application exit. 
+            
+          
             
           
             
