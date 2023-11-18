@@ -1,15 +1,15 @@
 id: io.github.Figma_Linux.figma_linux
 sdk: org.freedesktop.Sdk
 runtime: org.freedesktop.Platform
-runtime-version: '22.08'
+runtime-version: "23.08"
 base: org.electronjs.Electron2.BaseApp
-base-version: '22.08'
+base-version: "23.08"
 finish-args:
-  - '--share=ipc'
-  - '--socket=x11'
-  - '--device=dri'
-  - '--share=network'
-  - '--filesystem=xdg-pictures'
+  - "--share=ipc"
+  - "--socket=x11"
+  - "--device=dri"
+  - "--share=network"
+  - "--filesystem=xdg-pictures"
 command: figma-linux
 rename-icon: figma-linux
 modules:
