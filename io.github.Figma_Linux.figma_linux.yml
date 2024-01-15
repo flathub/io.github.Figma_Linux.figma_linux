@@ -1,15 +1,15 @@
 id: io.github.Figma_Linux.figma_linux
 sdk: org.freedesktop.Sdk
 runtime: org.freedesktop.Platform
-runtime-version: "23.08"
+runtime-version: '23.08'
 base: org.electronjs.Electron2.BaseApp
-base-version: "23.08"
+base-version: '23.08'
 finish-args:
-  - "--share=ipc"
-  - "--socket=x11"
-  - "--device=dri"
-  - "--share=network"
-  - "--filesystem=xdg-pictures"
+  - --share=ipc
+  - --socket=x11
+  - --device=dri
+  - --share=network
+  - --filesystem=xdg-pictures
 command: figma-linux
 rename-icon: figma-linux
 modules:
@@ -32,8 +32,8 @@ modules:
         only-arches:
           - x86_64
         url: >-
-          https://github.com/Figma-Linux/figma-linux/releases/download/v0.11.2/figma-linux_0.11.2_linux_amd64.deb
-        sha256: 58a2f945a6d3503f3120e528212ca7dba35762b34898a65d8d79d36245e97e41
+          https://github.com/Figma-Linux/figma-linux/releases/download/v0.11.3/figma-linux_0.11.3_linux_amd64.deb
+        sha256: f547f20aa82c83d5c017267b57b4e8824428bb8c7e8b11547e35d9d7faa50e60
         x-checker-data:
           type: json
           url: https://api.github.com/repos/Figma-Linux/figma-linux/releases/latest
