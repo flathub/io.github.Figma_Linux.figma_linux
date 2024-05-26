@@ -5,11 +5,11 @@ runtime-version: '23.08'
 base: org.electronjs.Electron2.BaseApp
 base-version: '23.08'
 finish-args:
-  - '--share=ipc'
-  - '--socket=x11'
-  - '--device=dri'
-  - '--share=network'
-  - '--filesystem=xdg-pictures'
+  - --share=ipc
+  - --socket=x11
+  - --device=dri
+  - --share=network
+  - --filesystem=xdg-pictures
 command: figma-linux
 rename-icon: figma-linux
 modules:
@@ -32,8 +32,8 @@ modules:
         only-arches:
           - x86_64
         url: >-
-          https://github.com/Figma-Linux/figma-linux/releases/download/v0.11.3/figma-linux_0.11.3_linux_amd64.deb
-        sha256: f547f20aa82c83d5c017267b57b4e8824428bb8c7e8b11547e35d9d7faa50e60
+          https://github.com/Figma-Linux/figma-linux/releases/download/v0.11.4/figma-linux_0.11.4_linux_amd64.deb
+        sha256: ba452c36058eb4845ee78bec991748eb6b328c83f04ac80d57b9084c2c346144
         x-checker-data:
           type: json
           url: https://api.github.com/repos/Figma-Linux/figma-linux/releases/latest
@@ -45,8 +45,8 @@ modules:
         only-arches:
           - aarch64
         url: >-
-          https://github.com/Figma-Linux/figma-linux/releases/download/v0.11.3/figma-linux_0.11.3_linux_arm64.deb
-        sha256: 58d05ead9ba0936d3fc2e044df913dc62d7538ada9b72c1921007a5557c7f45f
+          https://github.com/Figma-Linux/figma-linux/releases/download/v0.11.4/figma-linux_0.11.4_linux_arm64.deb
+        sha256: bd3b22404541bf819320be9635f54fcd4cce1915bc21c339c9a34966f74959bb
         x-checker-data:
           type: json
           url: https://api.github.com/repos/Figma-Linux/figma-linux/releases/latest
