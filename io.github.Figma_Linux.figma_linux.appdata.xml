@@ -40,15 +40,9 @@
           <li>Bug Fixes:</li>
           <li>Set appVersion to ignore version checking
           </li>
-          <li>
-            <br />
-          </li>
           <li>Other Changes:</li>
           <li>Update the release ci</li>
           <li>Bump Electron from 27.2.2 to 30.0.8</li>
-          <li>
-            <br />
-          </li>
         </ul>
       </description>
     </release>
@@ -56,36 +50,14 @@
       <description>
         <ul>
           <li>Bug Fixes:</li>
-          <li> import a plugin from manifest.json. <a
-              href="https://github.com/Figma-Linux/figma-linux/issues/358"
-              description="https://github.com/Figma-Linux/figma-linux/issues/358" target="_blank">
-            #358</a>
-          </li>
-          <li> visible font selection field. <a
-              href="https://github.com/Figma-Linux/figma-linux/issues/356"
-              description="https://github.com/Figma-Linux/figma-linux/issues/356" target="_blank">
-            #356</a>
-          </li>
-          <li> use default settings if can not parse settings.json file. <a
-              href="https://github.com/Figma-Linux/figma-linux/issues/357"
-              description="https://github.com/Figma-Linux/figma-linux/issues/357" target="_blank">
-            #357</a>
-          </li>
-          <li> validate file path for extension file. <a
-              href="https://github.com/Figma-Linux/figma-linux/issues/352"
-              description="https://github.com/Figma-Linux/figma-linux/issues/352" target="_blank">
-            #352</a>
-          </li>
-          <li>
-            <br />
-          </li>
+          <li> import a plugin from manifest.json.</li>
+          <li> visible font selection field.</li>
+          <li> use default settings if can not parse settings.json file.</li>
+          <li> validate file path for extension file.</li>
           <li>Other Changes:</li>
           <li>Bump Electron from 27.2.0 to 27.2.2</li>
           <li>Bump Electron from 27.0.4 to 27.2.0</li>
           <li>set default values for dev ports</li>
-          <li>
-            <br />
-          </li>
         </ul>
       </description>
     </release>
@@ -94,14 +66,8 @@
         <ul>
           <li>Bug Fixes:</li>
           <li>update files for build on launchpad</li>
-          <li>
-            <br />
-          </li>
           <li>Other Changes:</li>
           <li>update build ppa script</li>
-          <li>
-            <br />
-          </li>
         </ul>
       </description>
     </release>
@@ -109,13 +75,7 @@
       <description>
         <ul>
           <li>Bug Fixes:</li>
-          <li> copy as png. <a href="https://github.com/Figma-Linux/figma-linux/issues/350"
-              description="https://github.com/Figma-Linux/figma-linux/issues/350"
-              target="_blank">#350</a>
-          </li>
-          <li>
-            <br />
-          </li>
+          <li> copy as png.</li>
           <li>Other Changes:</li>
           <li>update deb files</li>
           <li>add desktop file for dev build</li>
@@ -123,9 +83,6 @@
           <li>update snapcraft config</li>
           <li>update generate release notes</li>
           <li>update ci</li>
-          <li>
-            <br />
-          </li>
         </ul>
       </description>
     </release>
@@ -146,9 +103,6 @@
           <li>implement multiple windows</li>
           <li>Rework frontend. Delete React, Mobx, Webpack, node-sass and etc. And add RollUp and
             Svelte</li>
-          <li>
-            <br />
-          </li>
           <li>Bug Fixes:</li>
           <li>main pipeline</li>
           <li>display themes list after first sync</li>
@@ -195,14 +149,8 @@
           <li>move font manager on nodeJS side</li>
           <li>init settings if file exists with partial data</li>
           <li>error when try restore empty tab list</li>
-          <li> mic access. <a href="https://github.com/Figma-Linux/figma-linux/issues/317"
-              description="https://github.com/Figma-Linux/figma-linux/issues/317"
-              target="_blank">#317</a>
-          </li>
-          <li> export files. <a href="https://github.com/Figma-Linux/figma-linux/issues/203"
-              description="https://github.com/Figma-Linux/figma-linux/issues/203"
-              target="_blank">#203</a>
-          </li>
+          <li> mic access.</li>
+          <li> export files.</li>
           <li>remove a tab object from the svelte store after the close tab from context menu</li>
           <li>copy a project url, and reload a tab</li>
           <li>save and restore tabs after open a window</li>
@@ -226,19 +174,9 @@
           <li>sync themes</li>
           <li>change zoom for the ZoomView component</li>
           <li>toggling the main menu</li>
-          <li> Fix build-id conflicts with other packages ( <a
-              href="https://github.com/Figma-Linux/figma-linux/issues/310"
-              description="https://github.com/Figma-Linux/figma-linux/issues/310" target="_blank">
-            #310)</a>
+          <li>Fix build-id conflicts with other packages.
           </li>
-          <li> Local plugins are reset on application exit. <a
-              href="https://github.com/Figma-Linux/figma-linux/issues/296"
-              description="https://github.com/Figma-Linux/figma-linux/issues/296" target="_blank">
-            #296</a>
-          </li>
-          <li>
-            <br />
-          </li>
+          <li>Local plugins are reset on application exit.</li>
           <li>Other Changes:</li>
           <li>update readme</li>
           <li>update snapcraft config</li>
@@ -355,9 +293,6 @@
           <li>move the openTabMenu handler to the WindowsManager</li>
           <li>cleaned up the code a bit</li>
           <li>move the setFocusToMainTab handler to WindowsManager class</li>
-          <li>
-            <br />
-          </li>
         </ul>
       </description>
     </release>
