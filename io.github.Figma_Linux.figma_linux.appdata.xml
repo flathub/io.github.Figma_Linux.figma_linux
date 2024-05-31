@@ -8,12 +8,9 @@
     https://raw.githubusercontent.com/Figma-Linux/figma-linux/dev/resources/icons/512x512.png</icon>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-2.0</project_license>
-  <description>
-     Figma is the first interface design tool based in the browser, making it easier for
-    teams to create software. 
-  
-    <p>NOTE: This wrapper is not verified by, affiliated with, or
-    supported by Figma, Inc.</p>
+  <description> Figma is the first interface design tool based in the browser, making it easier for
+    teams to create software. <p>NOTE: This wrapper is not verified by, affiliated with, or
+      supported by Figma, Inc.</p>
   </description>
   <url type="homepage">https://github.com/Figma-Linux/figma-linux</url>
   <url type="bugtracker">https://github.com/Figma-Linux/figma-linux/issues</url>
@@ -37,32 +34,30 @@
     <content_attribute id="money-purchasing">intense</content_attribute>
   </content_rating>
   <releases>
+    <release version="0.11.4" date="2024-05-26">
+      <description>
+        <ul>
+          <li>Bug Fixes:</li>
+          <li>Set appVersion to ignore version checking
+          </li>
+          <li>Other Changes:</li>
+          <li>Update the release ci</li>
+          <li>Bump Electron from 27.2.2 to 30.0.8</li>
+        </ul>
+      </description>
+    </release>
     <release version="0.11.3" date="2024-01-15">
       <description>
         <ul>
           <li>Bug Fixes:</li>
-          <li>
-            import a plugin from manifest.json. 
-            <a href="https://github.com/Figma-Linux/figma-linux/issues/358" target="_blank">#358</a>
-          </li>
-          <li>
-            visible font selection field. 
-            <a href="https://github.com/Figma-Linux/figma-linux/issues/356" target="_blank">#356</a>
-          </li>
-          <li>
-            use default settings if can not parse settings.json file. 
-            <a href="https://github.com/Figma-Linux/figma-linux/issues/357" target="_blank">#357</a>
-          </li>
-          <li>
-            validate file path for extension file. 
-            <a href="https://github.com/Figma-Linux/figma-linux/issues/352" target="_blank">#352</a>
-          </li>
-          <li/>
+          <li> import a plugin from manifest.json.</li>
+          <li> visible font selection field.</li>
+          <li> use default settings if can not parse settings.json file.</li>
+          <li> validate file path for extension file.</li>
           <li>Other Changes:</li>
           <li>Bump Electron from 27.2.0 to 27.2.2</li>
           <li>Bump Electron from 27.0.4 to 27.2.0</li>
           <li>set default values for dev ports</li>
-          <li/>
         </ul>
       </description>
     </release>
@@ -71,10 +66,8 @@
         <ul>
           <li>Bug Fixes:</li>
           <li>update files for build on launchpad</li>
-          <li/>
           <li>Other Changes:</li>
           <li>update build ppa script</li>
-          <li/>
         </ul>
       </description>
     </release>
@@ -82,12 +75,7 @@
       <description>
         <ul>
           <li>Bug Fixes:</li>
-          <li>
-             copy as png. 
-          
-            <a href="https://github.com/Figma-Linux/figma-linux/issues/350" target="_blank">#350</a>
-          </li>
-          <li/>
+          <li> copy as png.</li>
           <li>Other Changes:</li>
           <li>update deb files</li>
           <li>add desktop file for dev build</li>
@@ -95,7 +83,6 @@
           <li>update snapcraft config</li>
           <li>update generate release notes</li>
           <li>update ci</li>
-          <li/>
         </ul>
       </description>
     </release>
@@ -116,7 +103,6 @@
           <li>implement multiple windows</li>
           <li>Rework frontend. Delete React, Mobx, Webpack, node-sass and etc. And add RollUp and
             Svelte</li>
-          <li/>
           <li>Bug Fixes:</li>
           <li>main pipeline</li>
           <li>display themes list after first sync</li>
@@ -163,16 +149,8 @@
           <li>move font manager on nodeJS side</li>
           <li>init settings if file exists with partial data</li>
           <li>error when try restore empty tab list</li>
-          <li>
-             mic access. 
-          
-            <a href="https://github.com/Figma-Linux/figma-linux/issues/317" target="_blank">#317</a>
-          </li>
-          <li>
-             export files. 
-          
-            <a href="https://github.com/Figma-Linux/figma-linux/issues/203" target="_blank">#203</a>
-          </li>
+          <li> mic access.</li>
+          <li> export files.</li>
           <li>remove a tab object from the svelte store after the close tab from context menu</li>
           <li>copy a project url, and reload a tab</li>
           <li>save and restore tabs after open a window</li>
@@ -196,17 +174,9 @@
           <li>sync themes</li>
           <li>change zoom for the ZoomView component</li>
           <li>toggling the main menu</li>
-          <li>
-             Fix build-id conflicts with other packages ( 
-          
-            <a href="https://github.com/Figma-Linux/figma-linux/issues/310)" target="_blank">#310)</a>
+          <li>Fix build-id conflicts with other packages.
           </li>
-          <li>
-             Local plugins are reset on application exit. 
-          
-            <a href="https://github.com/Figma-Linux/figma-linux/issues/296" target="_blank">#296</a>
-          </li>
-          <li/>
+          <li>Local plugins are reset on application exit.</li>
           <li>Other Changes:</li>
           <li>update readme</li>
           <li>update snapcraft config</li>
@@ -323,15 +293,14 @@
           <li>move the openTabMenu handler to the WindowsManager</li>
           <li>cleaned up the code a bit</li>
           <li>move the setFocusToMainTab handler to WindowsManager class</li>
-          <li/>
         </ul>
       </description>
     </release>
-    <release version="0.9.6" date="2022-03-19"/>
-    <release version="0.9.4" date="2022-02-20"/>
-    <release version="0.9.3" date="2021-12-09"/>
-    <release version="0.9.2" date="2021-10-16"/>
-    <release version="0.9.1" date="2021-10-14"/>
+    <release version="0.9.6" date="2022-03-19" />
+    <release version="0.9.4" date="2022-02-20" />
+    <release version="0.9.3" date="2021-12-09" />
+    <release version="0.9.2" date="2021-10-16" />
+    <release version="0.9.1" date="2021-10-14" />
     <release version="0.8.1" date="2021-04-05">
       <description>
         <ul>
