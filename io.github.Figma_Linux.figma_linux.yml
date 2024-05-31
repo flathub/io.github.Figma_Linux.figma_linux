@@ -10,7 +10,7 @@ finish-args:
   - --device=dri
   - --share=network
   - --filesystem=xdg-pictures
-command: figma-linux
+command: /app/figma-linux/figma-linux
 rename-icon: figma-linux
 modules:
   - name: figma-linux
