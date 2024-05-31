@@ -22,7 +22,6 @@ modules:
       - cp -r  opt/figma-linux /app/figma-linux
       - mkdir -p /app/share/icons/hicolor
       - cp -r usr/share/icons/hicolor/* /app/share/icons/hicolor
-      - install figma-linux.sh /app/bin/figma-linux
       - >-
         install -Dm644 io.github.Figma_Linux.figma_linux.desktop
         /app/share/applications/io.github.Figma_Linux.figma_linux.desktop
@@ -54,11 +53,6 @@ modules:
           url-query: >
             .assets[] | select(.name=="figma-linux_" + $version +
             "_linux_arm64.deb") | .browser_download_url
-      - type: script
-        dest-filename: figma-linux.sh
-        commands:
-          - export TMPDIR="$XDG_RUNTIME_DIR/app/$FLATPAK_ID"
-          - exec zypak-wrapper /app/figma-linux/figma-linux "$@"
       - type: file
         path: io.github.Figma_Linux.figma_linux.desktop
       - type: file
