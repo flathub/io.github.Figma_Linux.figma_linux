@@ -2,6 +2,7 @@
 <component type="desktop">
   <id>io.github.Figma_Linux.figma_linux</id>
   <name>Figma for Linux</name>
+  <launchable type="desktop-id">io.github.Figma_Linux.figma_linux.desktop</launchable>
   <summary>Web-based collaborative design tool</summary>
   <developer_name>Chugunov Roman</developer_name>
   <icon type="remote">
