@@ -9,8 +9,11 @@
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-2.0</project_license>
   <description>
+    
      Figma is the first interface design tool based in the browser, making it easier for
     teams to create software. 
+  
+    
   
     <p>NOTE: This wrapper is not verified by, affiliated with, or
     supported by Figma, Inc.</p>
@@ -37,24 +40,50 @@
     <content_attribute id="money-purchasing">intense</content_attribute>
   </content_rating>
   <releases>
+    <release version="0.11.5" date="2024-10-10">
+      <description>
+        <ul>
+          <li>Bug Fixes:</li>
+          <li>update softprops/action-gh-release</li>
+          <li>docker</li>
+          <li/>
+          <li>Other Changes:</li>
+          <li>update version of actions/upload-artifact</li>
+          <li>useless services for receiving donations have been removed</li>
+          <li/>
+        </ul>
+      </description>
+    </release>
     <release version="0.11.3" date="2024-01-15">
       <description>
         <ul>
           <li>Bug Fixes:</li>
           <li>
+            
             import a plugin from manifest.json. 
+            
+          
             <a href="https://github.com/Figma-Linux/figma-linux/issues/358" target="_blank">#358</a>
           </li>
           <li>
+            
             visible font selection field. 
+            
+          
             <a href="https://github.com/Figma-Linux/figma-linux/issues/356" target="_blank">#356</a>
           </li>
           <li>
+            
             use default settings if can not parse settings.json file. 
+            
+          
             <a href="https://github.com/Figma-Linux/figma-linux/issues/357" target="_blank">#357</a>
           </li>
           <li>
+            
             validate file path for extension file. 
+            
+          
             <a href="https://github.com/Figma-Linux/figma-linux/issues/352" target="_blank">#352</a>
           </li>
           <li/>
@@ -83,7 +112,10 @@
         <ul>
           <li>Bug Fixes:</li>
           <li>
+            
              copy as png. 
+          
+            
           
             <a href="https://github.com/Figma-Linux/figma-linux/issues/350" target="_blank">#350</a>
           </li>
@@ -164,12 +196,18 @@
           <li>init settings if file exists with partial data</li>
           <li>error when try restore empty tab list</li>
           <li>
+            
              mic access. 
+          
+            
           
             <a href="https://github.com/Figma-Linux/figma-linux/issues/317" target="_blank">#317</a>
           </li>
           <li>
+            
              export files. 
+          
+            
           
             <a href="https://github.com/Figma-Linux/figma-linux/issues/203" target="_blank">#203</a>
           </li>
@@ -197,12 +235,18 @@
           <li>change zoom for the ZoomView component</li>
           <li>toggling the main menu</li>
           <li>
+            
              Fix build-id conflicts with other packages ( 
+          
+            
           
             <a href="https://github.com/Figma-Linux/figma-linux/issues/310)" target="_blank">#310)</a>
           </li>
           <li>
+            
              Local plugins are reset on application exit. 
+          
+            
           
             <a href="https://github.com/Figma-Linux/figma-linux/issues/296" target="_blank">#296</a>
           </li>
